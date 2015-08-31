@@ -1,2 +1,2 @@
 # paulwillot.github.io
-Person
+Personal website
