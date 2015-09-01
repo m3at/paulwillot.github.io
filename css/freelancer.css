@@ -577,7 +577,10 @@ footer .footer-below {
     opacity: 0;
 }
 
-/* adding timeline */
+/*
+********************************************************************************
+adding timeline
+*/
 
 .timeline {
     position: relative;
@@ -638,14 +641,14 @@ footer .footer-below {
     z-index: 100;
     position: absolute;
     left: 0;
-    width: 80px;
-    height: 80px;
-    margin-left: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #18bc9c;
 }
 
 .timeline>li .timeline-image h4 {
@@ -698,22 +701,22 @@ footer .footer-below {
     }
 
     .timeline>li {
-        margin-bottom: 100px;
-        min-height: 100px;
+        margin-bottom: 10px;
+        min-height: 30px;
     }
 
     .timeline>li .timeline-panel {
         float: left;
-        width: 41%;
+        width: 47%;
         padding: 0 20px 20px 30px;
         text-align: right;
     }
 
     .timeline>li .timeline-image {
         left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -731,7 +734,7 @@ footer .footer-below {
 
 @media(min-width:992px) {
     .timeline>li {
-        min-height: 150px;
+        min-height: 50px;
     }
 
     .timeline>li .timeline-panel {
@@ -739,9 +742,9 @@ footer .footer-below {
     }
 
     .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -757,7 +760,7 @@ footer .footer-below {
 
 @media(min-width:1200px) {
     .timeline>li {
-        min-height: 170px;
+        min-height: 70px;
     }
 
     .timeline>li .timeline-panel {
@@ -765,9 +768,9 @@ footer .footer-below {
     }
 
     .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
     }
 
     .timeline>li .timeline-image h4 {
