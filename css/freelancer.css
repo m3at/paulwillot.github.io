@@ -54,6 +54,8 @@
    border-radius: 50%;
  }
 
+ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
+
 /* Timeline added at the bottom */
 
  /*
