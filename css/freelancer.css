@@ -196,7 +196,7 @@ hr.grad-primary:after {
 }
 
 header {
-    text-align: left; /* center */
+    text-align: center; /* center */
     color: #fff;
     background: #18bc9c;
 }
@@ -226,6 +226,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
+        text-align: left;
         padding-top: 200px;
         padding-bottom: 50px;
     }
