@@ -4,6 +4,39 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+ /*
+ Added
+ */
+
+ .bg-light-gray {
+     background-color: #f7f7f7;
+ }
+
+ #portfolio .portfolio-item .portfolio-caption {
+     margin: 0 auto;
+     padding: 25px;
+     max-width: 400px;
+     text-align: center;
+     background-color: #fff;
+ }
+
+ #portfolio .portfolio-item .portfolio-caption h4 {
+     margin: 0;
+     text-transform: none;
+ }
+
+ #portfolio .portfolio-item .portfolio-caption p {
+     margin: 0;
+     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-size: 16px;
+     font-style: italic;
+ }
+
+ /*
+  End added
+  */
+
 body {
     overflow-x: hidden;
 }
@@ -37,7 +70,10 @@ h6 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.grad-primary,
+hr.project-primary,
+hr.contact-primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -48,7 +84,49 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f1b2";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.project-primary:after {
+    content: "\f126";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.contact-primary:after {
+    content: "\f044";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.grad-primary:after {
+    content: "\f19d";
+
+    /* \f005 star
+     \f113 github
+     \f126 fork
+     \f1dd paragraph
+     \f1c0 database/stack
+     \f1b2 cube
+     \f19d graduation cap
+     \f044 pencil
+     \f0ae levels
+     */
+    /* http://astronautweb.co/snippet/font-awesome/ */
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -60,17 +138,33 @@ hr.star-primary:after {
 hr.star-light {
     border-color: #fff;
 }
-
 hr.star-light:after {
     color: #fff;
     background-color: #18bc9c;
 }
 
-hr.star-primary {
+hr.project-primary {
     border-color: #2c3e50;
 }
+hr.project-primary:after {
+    color: #2c3e50;
+    background-color: #f7f7f7;
+}
 
-hr.star-primary:after {
+hr.contact-primary {
+    border-color: #2c3e50;
+}
+hr.contact-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.star-primary,
+hr.grad-primary {
+    border-color: #2c3e50;
+}
+hr.star-primary:after,
+hr.grad-primary:after {
     color: #2c3e50;
     background-color: #fff;
 }
