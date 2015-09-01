@@ -20,14 +20,51 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
+            /*
             $.ajax({
-                url: "././mail/contact_me.php",
+              type: "POST",
+              url: "https://mandrillapp.com/api/1.0/messages/send.json",
+              data: {
+                'key': '1zMhZyToNM_LJ6wSkTHsRw',
+                'message': {
+                  'from_email': 'paul.willot.2@gmail.com',
+                  'to': [
+                    {
+                      'email': 'paul.willot.2@gmail.com',
+                      'name': 'paul.willot.2',
+                      'type': 'to'
+                    }
+                  ],
+                  'subject': 'title',
+                  'html': 'html can be used'
+                }
+              }
+            });
+            */
+
+            $.ajax({
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
                 type: "POST",
                 data: {
-                    name: name,
+
+                    'key': '1zMhZyToNM_LJ6wSkTHsRw',
+                    'message': {
+                      'from_email': email,
+                      'to': [
+                        {
+                          'email': 'paul.willot.2@gmail.com',
+                          'name': 'paul.willot.2',
+                          'type': 'to'
+                        }
+                      ],
+                      'subject': 'github page, Automatic mail',
+                      'text': message
+                    }
+                    /*name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    message: message*/
                 },
                 cache: false,
                 success: function() {
